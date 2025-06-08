@@ -1,16 +1,51 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
+  background-color: #f0f9ff;
   margin: 0;
   padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  background-image: url('https://i.pinimg.com/736x/39/c7/1e/39c71e43cd06601a698edc75859dd674.jpg');
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#game {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  max-width: 600px;
-  margin: 20px auto;
+header {
+  text-align: center;
 }
+
+#joc, #menu {
+  text-align: center;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  /* Treu display:flex dels botons */
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 0 100px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.1s;
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
