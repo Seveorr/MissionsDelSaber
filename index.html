@@ -6,8 +6,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Missions del Saber</h1>
-  <div id="game"></div>
+  <header>
+    <h1>Missions del Saber</h1>
+  </header>
+  <main>
+    <div id="menu">
+      <button onclick="iniciarJoc('matematiques')">Matemàtiques</button>
+      <button onclick="iniciarJoc('llengua')">Llengua</button>
+      <button onclick="iniciarJoc('historia')">Història</button>
+      <button onclick="iniciarJoc('ciencies')">Ciències</button>
+    </div>
+    <div id="joc" style="display:none">
+    
+    </div>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
