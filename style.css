@@ -2,13 +2,12 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f9ff;
   margin: 0;
-  padding: 20px;
+  height: 100vh; /* Alçada total de la finestra */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 
   background-image: url('https://i.pinimg.com/736x/39/c7/1e/39c71e43cd06601a698edc75859dd674.jpg');
   background-size: cover;  
@@ -32,7 +31,6 @@ header {
 }
 
 button {
-  /* Treu display:flex dels botons */
   padding: 10px 20px;
   font-size: 16px;
   box-shadow: 0 0 100px rgba(0,0,0,0.1);
@@ -47,5 +45,13 @@ button:hover {
 
 button:active {
   transform: scale(0.9);
+}
+
+.botons-missio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
 }
 
